@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <script src="index.js"></script>
+    
+    
+</head>
+<span id ="123"></span> <br/> <br/> <br/> <br/> <br/>
+<body>
+    <h1 id="h1_id">this is Heading</h1>
+    <input type="button" onclick="changeH1content()" value="change H1" />
+    <input type="text" id="inp_id" />
+    <input type="button" onclick="changecolor('Red')" value="Red" />
+    <input type="button" onclick="changecolor('Blue')" value="Blue" />
+    <input type="button" onclick="changecolor('green')" value="green" />
+    <input type="number" id="num1" />
+    <input type="button" onclick="calculate('increment')" value="Increment" />
+    <input type="button" onclick="calculate('decrement')" value="Decrement" />
+
+
+    <input type="text" id="new_id" oninput="calculate_length()" />
+    <span id="my_id"></span>
+
+
+    <div id="div_id">this is my div</div>
+    <input type="button" onclick="showHide()" value="Hide" id="btn_id" />
+
+    <input type="password" oninput="validatePassword(this.value)" />
+    <span id="passStr"></span>
+    <input type="radio" value="free" name="payment" checked onclick="showHidepaymentDiv(this.value)" />free
+    <input type="radio" value="premium" name="payment" checked onclick="showHidepaymentDiv(this.value)" />premium
+    <input type="radio" value="enterprise" name="payment" checked onclick="showHidepaymentDiv(this.value)" />enterprise
+    <input type="radio" value="platinum" name="payment" checked onclick="showHidepaymentDiv(this.value)" />platinum
+    <div id="payment_div" style="display:none;">
+        <input type="number" oninput="calculateTotal()" id="text_val">
+        X
+        <span id="cost"></span>
+        $
+        =
+        <span id="total"></span>
+        $
+    </div>
+    <br>
+    name:
+    <input type="text" placeholder="first Name" id="fname" />
+    <input type="text" placeholder="Middle Name" id="mname" />
+    <input type="text" placeholder="Last Name" id="lname" />
+    <input type="button" value="Generate" onclick="generateOptions()" />
+    <br>
+    UserId:
+    <input type="text" id="uname" placeholder="Username" disabled />
+    <ul id="ul_id"></ul>
+
+
+
+    <br><br><br><br>
+    <ul id="my_id"></ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl.No.</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="bill_tbody"></tbody>
+    </table>
+    <span id="timer"></span>
+    <input type="button" value="Start" style="background:green;color:white;"
+    onclick="startTimer()" id="timer_btn"/>
+    <br><br><br><br><br>
+    <br />
+    <br />
+    <br />
+    <input type="button" value="sendGETrequest" onclick="sendGetRequest()" />
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Avatar</th>
+            </tr>
+        </thead>
+        <tbody id="ajax_tbody"></tbody>
+        </table>
+        <input type="text" id="n1" placeholder="Name" />
+        <input type="text" id="j1" placeholder="Job" />
+        <input type="button" value="send POST request" onclick="sendPostRequest()" />
+        <br />
+        <input type="button" value="sendGETrequest" onclick="getRequest()" />
+        <table>
+            <thead>
+                <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>username</th>
+                <th>email</th>
+                <th>address</th>
+                <th>geo</th>
+
+                </tr>
+            </thead>
+            <tbody id="ajax_tbody1"></tbody>
+        </table>
+        <input type="text" id="n3" />
+        <input type="text" id="n4" />
+        <input type="button" onclick="add()" value="Add" />
+        <input type="button" onclick="multiply()" value="Multiply" />
+        <input type="button" onclick="subtract()" value="Subtract" />
+        <span id="total_id"> fgghhh</span>
+    -->
+        <input type="button" value="sendGETrequest" onclick="getRequest1()" />
+
+        
+        <table>
+            <thead>
+                <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>qualification</th>
+                <th>hobbies</th>
+
+                </tr>
+            </thead>
+            <tbody id="ajax_tbody2"></tbody>
+        </table>
+</body>
+
+</html>
